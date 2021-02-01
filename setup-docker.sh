@@ -4,7 +4,10 @@ source common-config.sh
 sudo apt update
 
 sudo apt install -y docker.io
-sudo systemctl disable docker
+sudo systemctl disable docker.service
+
+username=`whoami`
+sudo usermod -aG docker $username
 
 if ! [[ -d $HOME/bin ]]; then
     mkdir $HOME/bin
