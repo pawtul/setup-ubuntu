@@ -1,1 +1,1 @@
-cat dconf.dump > dconf load /
+dconf load / < dconf.dump
