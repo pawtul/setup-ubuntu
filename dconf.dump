@@ -1,0 +1,48 @@
+[org/gnome/desktop/wm/keybindings]
+move-to-workspace-down=['<Control><Shift><Alt>j', '<Control><Shift><Alt>Down']
+move-to-workspace-up=['<Control><Shift><Alt>k', '<Control><Shift><Alt>Up']
+switch-to-workspace-down=['<Control><Alt>j', '<Control><Alt>Down']
+switch-to-workspace-up=['<Control><Alt>k', '<Control><Alt>Up']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='close,minimize,maximize:'
+
+[org/gnome/shell]
+enabled-extensions=['putWindow@clemens.lab21.org', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['firefox.desktop']
+had-bluetooth-devices-setup=false
+
+[org/gnome/shell/extensions/dash-to-dock]
+animate-show-apps=true
+autohide=true
+dash-max-icon-size=16
+dock-fixed=true
+dock-position='RIGHT'
+intellihide=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+multi-monitor=false
+preferred-monitor=0
+require-pressure-to-show=false
+show-apps-at-top=false
+show-favorites=true
+show-trash=false
+
+[org/gnome/shell/extensions/org-lab21-putwindow]
+put-to-center=['<Primary><Alt>KP_5', '<Control><Super>i']
+put-to-center-enabled=1
+put-to-corner-ne=['<Primary><Alt>KP_9', '<Control><Super>u']
+put-to-corner-ne-enabled=1
+put-to-corner-nw=['<Primary><Alt>KP_7', '<Control><Super>y']
+put-to-corner-nw-enabled=1
+put-to-corner-se=['<Primary><Alt>KP_3', '<Control><Super>m']
+put-to-corner-se-enabled=1
+put-to-corner-sw=['<Primary><Alt>KP_1', '<Control><Super>n']
+put-to-corner-sw-enabled=1
+put-to-side-e=['<Primary><Alt>KP_6', '<Control><Super>l']
+put-to-side-e-enabled=1
+put-to-side-n=['<Primary><Alt>KP_8', '<Control><Super>k']
+put-to-side-n-enabled=1
+put-to-side-s=['<Primary><Alt>KP_2', '<Control><Super>j']
+put-to-side-s-enabled=1
+put-to-side-w=['<Primary><Alt>KP_4', '<Control><Super>h']
+put-to-side-w-enabled=1
