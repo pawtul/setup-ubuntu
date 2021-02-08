@@ -33,12 +33,12 @@ echo "setup-vim.sh"
 echo "============"
 bash setup-vim.sh
 
-echo "============"
-echo "setup-zsh.sh"
-echo "============"
-bash setup-zsh.sh
-
 echo "=============="
 echo "setup-dconf.sh"
 echo "=============="
 bash setup-dconf.sh
+
+echo "============"
+echo "setup-zsh.sh"
+echo "============"
+bash setup-zsh.sh
