@@ -38,6 +38,11 @@ echo "setup-dconf.sh"
 echo "=============="
 bash setup-dconf.sh
 
+echo "=============="
+echo "setup-docker.sh"
+echo "=============="
+bash setup-docker.sh
+
 echo "============"
 echo "setup-zsh.sh"
 echo "============"
