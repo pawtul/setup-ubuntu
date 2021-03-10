@@ -8,3 +8,5 @@ curl https://raw.githubusercontent.com/pawtul/dotfiles/master/.vimrc > $HOME/.vi
 
 vim -c PluginInstall
 
+# setup my snippets
+git clone https://github.com/pawtul/codesnippets.git ~/.vim/snippets
