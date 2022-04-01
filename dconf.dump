@@ -1,7 +1,11 @@
 [org/gnome/desktop/wm/keybindings]
 move-to-workspace-down=['<Control><Shift><Alt>j', '<Control><Shift><Alt>Down']
+move-to-workspace-left=['<Control><Shift><Alt>Left', '<Control><Shift><Alt>h']
+move-to-workspace-right=['<Control><Shift><Alt>Right', '<Control><Shift><Alt>l']
 move-to-workspace-up=['<Control><Shift><Alt>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Control><Alt>j', '<Control><Alt>Down']
+switch-to-workspace-left=['<Control><Alt>Left', '<Control><Alt>h']
+switch-to-workspace-right=['<Control><Alt>Right', '<Control><Alt>l']
 switch-to-workspace-up=['<Control><Alt>k', '<Control><Alt>Up']
 
 [org/gnome/desktop/wm/preferences]
