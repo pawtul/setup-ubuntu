@@ -6,7 +6,7 @@ sudo usermod -s `which zsh` $(whoami)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # copy zshrc
-curl https://raw.githubusercontent.com/pawtul/dotfiles/master/.zshrc > $HOME/.zshrc
+curl https://raw.githubusercontent.com/pawtul/dotfiles/master/zshrc > $HOME/.zshrc
 
 
 # spaceship prompt
