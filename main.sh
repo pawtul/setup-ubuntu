@@ -29,9 +29,9 @@ echo "============="
 bash setup-tmux.sh
 
 echo "============"
-echo "setup-vim.sh"
+echo "setup-nvim.sh"
 echo "============"
-bash setup-vim.sh
+bash setup-nvim.sh
 
 echo "=============="
 echo "setup-dconf.sh"
