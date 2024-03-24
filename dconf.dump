@@ -6,7 +6,8 @@ move-to-workspace-up=['<Control><Shift><Alt>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Control><Alt>j', '<Control><Alt>Down']
 switch-to-workspace-left=['<Control><Alt>Left', '<Control><Alt>h']
 switch-to-workspace-right=['<Control><Alt>Right', '<Control><Alt>l']
-switch-to-workspace-up=['<Control><Alt>k', '<Control><Alt>Up']
+switch-to-workspace-up=@as []
+toggle-maximized=['<Primary><Super>i']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='close,minimize,maximize:'
