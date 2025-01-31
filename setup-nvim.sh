@@ -1,3 +1,5 @@
+sudo apt-get install ninja-build gettext cmake curl build-essential
+
 config_home=~/.config/nvim
 if ! [[ -d $config_home ]]; then
     echo "creating $config_home"
@@ -15,11 +17,12 @@ git clone https://github.com/pawtul/codesnippets.git ~/.vim/snippets
 
 
 version=${NEOVIM_VERSION:-v0.10.4}
-if ! [[ -d ~/bin ]]; then
-    mkdir ~/bin
-fi
-wget "https://github.com/neovim/neovim/releases/download/${version}/nvim-linux-x86_64.tar.gz" -P /tmp/
-tar xf /tmp/nvim-linux-x86_64.tar.gz -C /tmp/
-cp /tmp/nvim-linux-x86_64/bin/nvim ~/bin
+pushd /tmp
+git clone https://github.com/neovim/neovim.git
+pushd neovim
+git checkout $version
+make CMAKE_BUILD_TYPE=Release
+sudo make install
 
-
+popd
+popd
