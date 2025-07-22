@@ -7,22 +7,20 @@ if ! [[ -d $config_home ]]; then
 fi
 
 curl https://raw.githubusercontent.com/pawtul/dotfiles/master/init.lua > $config_home/init.lua
+curl https://raw.githubusercontent.com/pawtul/dotfiles/master/coc-settings.json > $config_home/coc-settings.json
 pip install --upgrade pynvim
 
 # setup my snippets
-if ! [[ -d ~/.vim ]]; then
+if [[ ! -d ~/.vim ]]; then
     mkdir ~/.vim
 fi
 git clone https://github.com/pawtul/codesnippets.git ~/.vim/snippets
 
 
-version=${NEOVIM_VERSION:-v0.10.4}
 pushd /tmp
-git clone https://github.com/neovim/neovim.git
-pushd neovim
-git checkout $version
-make CMAKE_BUILD_TYPE=Release
-sudo make install
 
-popd
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage
+chmod +x nvim-linux-x86_64.appimage
+cp nvim-linux-x86_64.appimage /usr/bin/nvim
+
 popd

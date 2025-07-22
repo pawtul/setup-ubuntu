@@ -8,5 +8,7 @@ if ! [[ -d $HOME/.tmux/plugins ]]; then
     mkdir -p $HOME/.tmux/plugins
 fi
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if [ ! -d "~/.tmux/plugins/tpm" ]; then
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
 
